@@ -22,7 +22,14 @@ function Header() {
                     src = "https://pngimg.com/uploads/amazon/amazon_PNG11.png"
                 />
             </Link>
-            
+
+        <div className="HospitalDonorLogin">
+            <Link to="/loginselector">
+                {/* <img className="header__logo"
+                    src = "https://pngimg.com/uploads/amazon/amazon_PNG11.png"
+                /> */}
+            </Link>
+       </div>     
             
         <div
         className="header__search">
@@ -46,6 +53,15 @@ function Header() {
                     </span>
                 </div>
             </Link>
+
+            <div className="header__test">
+                <Link to = '/logintest'>
+                <span
+                className="header__test1">
+                    Login
+                </span>
+                </Link>
+            </div>
 
             <div className="header__option">
                 <span

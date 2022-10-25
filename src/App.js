@@ -5,6 +5,7 @@ import Home from './Home';
 import Checkout from './Checkout';
 import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
 import Login from './Login';
+import Loginselector from './LoginSelector';
 import {auth} from "./firebase";
 import {useStateValue} from "./StateProvider";
 
@@ -39,6 +40,9 @@ const [{},dispatch] = useStateValue();
         <Switch>
           <Route path="/login">
             <Login/>
+          </Route>
+          <Route path="/logintest">
+            <Loginselector/>
           </Route>
           <Route path = "/checkout">
             <Header />

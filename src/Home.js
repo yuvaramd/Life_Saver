@@ -14,18 +14,18 @@ function Home() {
 
                 <div className="home__row">
                     <Product 
-                    title ="Roku Streaming Stick 4K 2021 | Streaming Device 4K/HDR/Dolby Vision with Roku Voice Remote and TV Controls"
-                    price = {39.99} 
+                    title ="Hospital Users Login below:"
+                    // price = {39.99} 
                     image = "https://raw.githubusercontent.com/Cher-253/LifeSaverImages/main/hospitaliconSection.png"
-                    rating = {5}
+                    // rating = {5}
                     />
                     
 
                     <Product 
-                    title ="Seagate Portable 2TB External Hard Drive Portable HDD – USB 3.0 for PC, Mac, PlayStation, & Xbox - 1-Year Rescue Service (STGX2000400)"
-                    price = {59.99} 
+                    title ="Donors Login below:"
+                    // price = {59.99} 
                     image = "https://github.com/Cher-253/LifeSaverImages/blob/main/donoricon.jpeg?raw=true"
-                    rating = {4.}
+                    // rating = {4.}
                     />
 
                 </div>

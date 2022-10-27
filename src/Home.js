@@ -8,7 +8,7 @@ function Home() {
             <div className="home__container">
                 <img 
                 className="home__image"
-                src="https://raw.githubusercontent.com/Cher-253/LifeSaverImages/main/hospitalicon.webp"
+                src="https://i.ibb.co/nb2v86G/2.png"
                 alt= ""
                 />
 
@@ -30,7 +30,7 @@ function Home() {
 
                 </div>
 
-                <div className="home__row">
+                {/* <div className="home__row">
                     <Product 
                     title ="Apple Pencil (2nd Generation)"
                     price = {124.98} 
@@ -51,9 +51,9 @@ function Home() {
                     />
 
 
-                </div>
+                </div> */}
 
-                <div className="home__row">
+                {/* <div className="home__row">
                     <Product 
                     title ="AMD Ryzen 5 5600X 6-core, 12-Thread Unlocked Desktop Processor with Wraith Stealth Cooler"
                     price = {289.00} 
@@ -61,7 +61,7 @@ function Home() {
                     rating = {5}
                     />
 
-                </div>
+                </div> */}
 
             </div>  
         </div>

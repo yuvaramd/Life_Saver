@@ -8,6 +8,7 @@ import Login from './Login';
 import Loginselector from './LoginSelector';
 import {auth} from "./firebase";
 import {useStateValue} from "./StateProvider";
+// import Logindonor from './LoginDonor';
 
 function App() {
 const [{},dispatch] = useStateValue();
@@ -44,6 +45,7 @@ const [{},dispatch] = useStateValue();
           <Route path="/logintest">
             <Loginselector/>
           </Route>
+          
           <Route path = "/checkout">
             <Header />
             <Checkout/>

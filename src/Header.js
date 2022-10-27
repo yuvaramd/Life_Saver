@@ -18,9 +18,9 @@ function Header() {
     return (
         <div className="header">
             <Link to="/">
-                <img className="header__logo"
-                    src = "https://pngimg.com/uploads/amazon/amazon_PNG11.png"
-                />
+                {/* <img className="header__logo"
+                    src = "https://i.ibb.co/K0hbXh8/logoerased.png"
+                /> */}
             </Link>
 
         <div className="HospitalDonorLogin">
@@ -31,18 +31,24 @@ function Header() {
             </Link>
        </div>     
             
-        <div
+        {/* <div
         className="header__search">
             <input
             className="header__searchInput"
             type="text"/>
             <SearchIcon
             className="header__searchIcon"/>
-        </div>
+        </div> */}
 
 
+
+
+    
         <div className="header__nav">
-            <Link to={!user && "/login"}>
+            <img className="header__logo"
+                    src = "https://i.ibb.co/fxqSs8h/finallogo2.png"
+                />
+            <Link to={!user && "/logintest"}>
                 <div onClick = {handleAuthentication}className="header__option">
                     <span className="header__optionLineOne">
                         Hello -   
@@ -54,16 +60,16 @@ function Header() {
                 </div>
             </Link>
 
-            <div className="header__test">
+            {/* <div className="header__test">
                 <Link to = '/logintest'>
                 <span
                 className="header__test1">
                     Login
                 </span>
                 </Link>
-            </div>
+            </div> */}
 
-            <div className="header__option">
+            {/* <div className="header__option">
                 <span
                 className="header__optionLineOne">
                     Returns
@@ -72,9 +78,9 @@ function Header() {
                 className="header__optionLineTwo">
                     & Orders
                 </span>
-            </div>
+            </div> */}
 
-            <div className="header__option">
+            {/* <div className="header__option">
                 <span
                 className="header__optionLineOne">
                     Your
@@ -93,7 +99,7 @@ function Header() {
                     </span>
                 </div>
             </Link>
-            
+             */}
 
         </div>
     </div>

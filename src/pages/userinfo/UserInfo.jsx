@@ -51,7 +51,7 @@ function UserInfo() {
         .then((docRef) => {
             
         })
-        .then(history.push("/"))
+        .then(history.push("/userhome"))
         .catch((err) => {
             console.log("Error adding document:", err);
         })

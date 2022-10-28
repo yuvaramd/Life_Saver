@@ -42,7 +42,7 @@ function HospitalInfo() {
         .then((docRef) => {
             
         })
-        .then(history.push("/"))
+        .then(history.push("/hospitalhome"))
         .catch((err) => {
             console.log("Error adding document:", err);
         })

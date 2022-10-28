@@ -1,0 +1,27 @@
+.rf-container{
+    margin-top: 10%;
+}
+
+.rf-form{
+      display: flex;
+      flex-direction: column;
+      width:  100%;
+      margin: auto;
+}
+
+.rf-header{
+      margin: 0px 0px 20px 0px;
+      font-size: 25px;
+}
+
+.add-btn{
+      margin: 20px 0px 0px 0px;
+      width: 200px;
+}
+
+.rf-form input {
+      width: 80%;
+}
+.rf-form select {
+    width: 82%;
+}

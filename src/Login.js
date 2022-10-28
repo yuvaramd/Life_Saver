@@ -16,6 +16,8 @@ function Login() {
     }
     
     const linkToPush = hospitalType ? '/hospitalinfo' : '/userinfo'
+    const linkToPushForHome = hospitalType ? '/hospitalhome' : '/userhome'
+    
 
     const signIn = e => {
         e.preventDefault();
@@ -23,7 +25,7 @@ function Login() {
         auth
             .signInWithEmailAndPassword(email, password)
             .then(auth => {
-                history.push('/')
+                history.push(linkToPushForHome)
             })
             .catch(error => alert(error.message))
     }

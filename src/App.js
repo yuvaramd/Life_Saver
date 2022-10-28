@@ -10,6 +10,9 @@ import {auth} from "./firebase";
 import {useStateValue} from "./StateProvider";
 import HospitalInfo from './pages/hospitalinfo/HospitalInfo';
 import UserInfo from './pages/userinfo/UserInfo';
+import HospitalHome from './pages/hospitalHome/HospitalHome';
+import UserHome from './pages/userHome/UserHome';
+
 
 function App() {
 const [{},dispatch] = useStateValue();
@@ -57,6 +60,14 @@ const [{},dispatch] = useStateValue();
           <Route path = "/userinfo">
             <Header />
             <UserInfo/>
+          </Route>
+          <Route path = "/hospitalhome">
+            <Header />
+            <HospitalHome/>
+          </Route>
+          <Route path = "/userhome">
+            <Header />
+            <UserHome/>
           </Route>
           <Route path = "/">
             <Header />

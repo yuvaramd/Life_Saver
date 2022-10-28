@@ -16,14 +16,12 @@ function UserInfo() {
     const [userEmail, setUserEmail] = useState("")
     const [bloodgroup, setBloodGroup] = useState("")
     const [age, setAge] = useState("")
-
+    const[{basket,user},dispatch] = useStateValue();
     const history = useHistory();
 
-    const[{user}] = useStateValue();
-
-    const emailValidation = (e) =>{
-        setUserEmail(e)
-    }
+    // const emailValidation = (e) =>{
+    //     setUserEmail(e)
+    // }
 
     const dataToSend = {
         name:name,
@@ -46,8 +44,16 @@ function UserInfo() {
 
     const handleSubmit = (e) =>{
         e.preventDefault()
-        emailValidation(user.email)
-        db.collection("users").add(dataToSend)
+        // emailValidation(user.email)
+        db.collection("users").add({
+            name:name,
+            phoneNumber:pnumber,
+            county:county,
+            state:state,
+            email:user.email,
+            bloodgroup: bloodgroup,
+            age:age
+        })
         .then((docRef) => {
             
         })
@@ -71,7 +77,7 @@ function UserInfo() {
             <label>
                 Age
             </label>
-            <input type="tel" required  id="hiName" value={pnumber} onChange={(e)=> {
+            <input type="tel" required  id="hiName" value={age} onChange={(e)=> {
                     e.preventDefault() 
                     setAge(e.target.value)
                  }

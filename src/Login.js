@@ -50,12 +50,12 @@ function Login() {
             <Link to ="/">
                 <img  
                     className = "login__logo"
-                    src = "https://pngimg.com/uploads/amazon/amazon_PNG24.png " 
+                     
                 />
             </Link>
 
             <div className="login__container">
-                <h1>Sign-in</h1>
+                <h1>Sign-in / Register</h1>
                 <form>
                     <h5>E-mail</h5>
                     <input type="text" value = {email} onChange = 
@@ -73,12 +73,10 @@ function Login() {
                     className="login__signInButton">Sign in</button>
                     
                 </form>
-                <p>
-                    By continuing, you agree to Amazon Clone's Conditions of Use and Privacy Notice.
-                </p>    
+                 
 
                 <button onClick = {register}
-                className="login__registerButton">Create Amazon Account</button>
+                className="login__registerButton">Create Firestream Account</button>
             </div>
         </div>
     )

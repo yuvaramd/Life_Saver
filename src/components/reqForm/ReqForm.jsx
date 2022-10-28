@@ -137,7 +137,7 @@ function ReqForm() {
                  }}/>
            
            <Link to="/">
-            <button className="add-btn" onClick={handleSubmit}> Add Information</button>
+            <button className="add-btn" onClick={handleSubmit}> Submit</button>
            </Link>
         </form>
     </div>

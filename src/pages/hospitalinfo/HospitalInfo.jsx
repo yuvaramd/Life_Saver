@@ -18,9 +18,7 @@ function HospitalInfo() {
 
     const[{user}] = useStateValue();
 
-    const emailValidation = (e) =>{
-        setUserEmail(e)
-    }
+
 
     const dataToSend = {
         name:name,
@@ -37,8 +35,14 @@ function HospitalInfo() {
 
     const handleSubmit = (e) =>{
         e.preventDefault()
-        emailValidation(user.email)
-        db.collection("hospitals").add(dataToSend)
+        // emailValidation(user.email)
+        db.collection("hospitals").add({
+            name:name,
+            phoneNumber:pnumber,
+            county:county,
+            state:state,
+            email:user.email,
+        })
         .then((docRef) => {
             
         })

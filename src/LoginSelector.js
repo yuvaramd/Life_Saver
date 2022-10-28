@@ -8,10 +8,13 @@ function Loginselector(){
             <Link to ='/login'>
                 <img
                 className = "hospitalsigninpicture"
-                src = 'https://raw.githubusercontent.com/Cher-253/LifeSaverImages/main/hospitalsigninpic.jpeg'
+                src = 'https://i.ibb.co/0jZn31r/Screen-Shot-2022-10-27-at-8-09-00-PM.png'
                 />
             </Link>
-
+            <span 
+                className="hospitallogin">
+                Hospital Users Sign Up/ Login
+            </span>
             <Link to ='/login'>
                 <img
                 className = "hospitalsigninpicture"

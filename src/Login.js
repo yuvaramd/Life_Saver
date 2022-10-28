@@ -39,7 +39,7 @@ function Login() {
             <Link to ="/">
                 <img  
                     className = "login__logo"
-                    src = "https://pngimg.com/uploads/amazon/amazon_PNG24.png " 
+                    src = "https://i.ibb.co/fxqSs8h/finallogo2.png" 
                 />
             </Link>
 
@@ -58,11 +58,11 @@ function Login() {
                     className="login__signInButton">Sign in</button>
                 </form>
                 <p>
-                    By continuing, you agree to Amazon Clone's Conditions of Use and Privacy Notice.
+                    By continuing, you agree to Life Stream's Conditions of Use and Privacy Notice.
                 </p>    
 
                 <button onClick = {register}
-                className="login__registerButton">Create Amazon Account</button>
+                className="login__registerButton">Create Life Stream Account</button>
             </div>
         </div>
     )

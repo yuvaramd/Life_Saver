@@ -4,24 +4,23 @@ import './LoginSelector.css'
 
 function Loginselector(){
     return (
-        <div className='loginselector'>
+        <div className='maindivlogin' >
+        <div className='loginselectorH'>
             <Link to ='/login'>
                 <img
                 className = "hospitalsigninpicture"
-                src = 'https://i.ibb.co/0jZn31r/Screen-Shot-2022-10-27-at-8-09-00-PM.png'
+                src = 'https://i.ibb.co/gwKQ7nW/hosplogin.png'
                 />
             </Link>
-            <span 
-                className="hospitallogin">
-                Hospital Users Sign Up/ Login
-            </span>
+            </div>
+            <div className='loginselectorD'>
             <Link to ='/login'>
                 <img
                 className = "hospitalsigninpicture"
-                src = 'https://github.com/Cher-253/LifeSaverImages/blob/main/donorsigninpic.png?raw=true'
+                src = 'https://i.ibb.co/bQxqsRq/donorlogin.png'
                 />
             </Link>
-
+</div>
         </div>
     )
 }

@@ -8,6 +8,8 @@ import Login from './Login';
 import Loginselector from './LoginSelector';
 import {auth} from "./firebase";
 import {useStateValue} from "./StateProvider";
+import HospitalInfo from './pages/hospitalinfo/HospitalInfo';
+import UserInfo from './pages/userinfo/UserInfo';
 
 function App() {
 const [{},dispatch] = useStateValue();
@@ -47,6 +49,14 @@ const [{},dispatch] = useStateValue();
           <Route path = "/checkout">
             <Header />
             <Checkout/>
+          </Route>
+          <Route path = "/hospitalinfo">
+            <Header />
+            <HospitalInfo/>
+          </Route>
+          <Route path = "/userinfo">
+            <Header />
+            <UserInfo/>
           </Route>
           <Route path = "/">
             <Header />

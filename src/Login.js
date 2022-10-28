@@ -5,8 +5,17 @@ import { auth } from "./firebase";
 
 function Login() {
     const history = useHistory();
+    
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [hospitalType, setHospitalType] = useState(false);
+
+    const checkboxControl = (e) => {
+        e.preventDefault()
+        setHospitalType(e.target.checked)
+    }
+    
+    const linkToPush = hospitalType ? '/hospitalinfo' : '/userinfo'
 
     const signIn = e => {
         e.preventDefault();
@@ -28,7 +37,7 @@ function Login() {
                 console.log(auth);
                 // it successfully created a new user with email and password
                 if (auth) {
-                    history.push('/')
+                    history.push(linkToPush)
                 }
             })
             .catch(error => alert(error.message))
@@ -53,9 +62,14 @@ function Login() {
                     <h5>Password</h5>
                     <input type = "password" value = {password} onChange = 
                     {e => setPassword(e.target.value)}/>
-
+                    <div className='checkbox-ui'>
+                        <h5>Login/Register as Hospital</h5>
+                        <input type="checkbox" value={hospitalType} onChange={checkboxControl}></input>
+                    </div>
+                  
                     <button type="submit" onClick={signIn}
                     className="login__signInButton">Sign in</button>
+                    
                 </form>
                 <p>
                     By continuing, you agree to Amazon Clone's Conditions of Use and Privacy Notice.

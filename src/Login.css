@@ -65,3 +65,10 @@
     margin-top: 10px;
     border-color: darkgray;
 }
+.checkbox-ui{
+    display: flex;
+    align-items: center;
+}
+.checkbox-ui input{
+    margin: 0px 0px 0px 20px;
+}

@@ -10,6 +10,8 @@
     min-width:100px;
     max-height:400px;
     z-index: 1;
+    background-color: black;
+
 }
 
 .product__rating{
@@ -38,7 +40,8 @@
 }
 
 .product__info{
-    height: 100px;
+    height: 200px;
     margin-bottom: 15px;
-    font-weight: bold;
+    font-weight: 900;
+    color:white;
 }

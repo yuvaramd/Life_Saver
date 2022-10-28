@@ -1,7 +1,8 @@
 .loginselector{
     background-color: white;
+    /* justify-items: left; */
     height: 100vh;
-    display:flex;
+    /* display:flex; */
     flex-direction: column;
     align-items: center;
 }
@@ -10,7 +11,7 @@
     margin-top: 20px;
     margin-bottom: 20px;
     object-fit: contain;
-    width: 100px;
+    width: 40%;
     margin-left: auto;
     margin-right: auto;
 }

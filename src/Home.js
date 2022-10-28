@@ -8,13 +8,13 @@ function Home() {
             <div className="home__container">
                 <img 
                 className="home__image"
-                src="https://i.ibb.co/nb2v86G/2.png"
+                src="https://i.ibb.co/8NVXGxj/Screen-Shot-2022-10-27-at-7-18-08-PM.png"
                 alt= ""
                 />
 
                 <div className="home__row">
                     <Product 
-                    title ="Hospital Users Login below:"
+                    title ="Want a last resort to save your patient?"
                     // price = {39.99} 
                     image = "https://raw.githubusercontent.com/Cher-253/LifeSaverImages/main/hospitaliconSection.png"
                     // rating = {5}
@@ -22,9 +22,9 @@ function Home() {
                     
 
                     <Product 
-                    title ="Donors Login below:"
+                    title ="Ready to save a life?"
                     // price = {59.99} 
-                    image = "https://github.com/Cher-253/LifeSaverImages/blob/main/donoricon.jpeg?raw=true"
+                    image = "https://i.ibb.co/8B0QYd2/Screen-Shot-2022-10-27-at-7-35-11-PM.png"
                     // rating = {4.}
                     />
 

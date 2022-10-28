@@ -2,7 +2,8 @@ import {Link} from "react-router-dom";
 import React, { useState } from 'react';
 import './LoginSelector.css'
 
-function Loginselector(){
+function Loginselector({userType}){
+    const [userType, setUserType] = useState("hello");
     return (
         <div className='loginselector'>
             <Link to ='/login'>

@@ -1,0 +1,13 @@
+.hh-container{
+    display: flex;
+    width: 100vw;
+    height: 100vw;
+}
+.hh-left{
+    width: 60%;  
+    margin: 40px 20px 20px 20px;
+}
+.hh-right{
+    margin: 40px 20px 20px 20px;
+
+}

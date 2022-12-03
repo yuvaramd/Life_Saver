@@ -1,0 +1,50 @@
+.dnr-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 500px;
+    height: 200px;
+    background-color: rgb(19, 25, 33,0.9);
+    margin: 0px 0px 30px 0px;
+    border-radius: 20px;
+    color: white;
+    
+}
+.dnr-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+}
+.dnr-requestInfo{
+    margin: 0px 0px 0px 20px;
+}
+.dnr-bottom{
+    display: flex;
+    margin: 0px 20px 20px 0px;
+}
+.dnrbtm-left{
+    width: 80%;
+}
+.dnrbtm-right{
+    display: flex;
+    width:30%;
+    justify-content: space-between;
+}
+
+.dnrbtn-decline{
+    background-color: crimson;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    width: 120px;
+    margin-right: 20px;
+}
+.dnrbtn-accept{
+    background-color: yellowgreen;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    width: 120px;
+}
+

@@ -1,0 +1,20 @@
+.hi-container{
+  margin-top: 10%;
+}
+.hi-form{
+    display: flex;
+    flex-direction: column;
+    width:  50%;
+    margin: auto;
+}
+.hi-header{
+    margin: 0px 0px 20px 0px;
+    font-size: 25px;
+}
+.add-btn{
+    margin: 20px 0px 0px 0px;
+    width: 200px;
+}
+.hi-form input {
+    width: 30%;
+}

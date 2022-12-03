@@ -3,24 +3,23 @@ import React, { useState } from 'react';
 import './LoginSelector.css'
 
 function Loginselector(){
+    const [userType, setUserType] = useState("hello");
     return (
-        <div className='maindivlogin' >
-        <div className='loginselectorH'>
+        <div className='loginselector'>
             <Link to ='/login'>
                 <img
                 className = "hospitalsigninpicture"
-                src = 'https://i.ibb.co/gwKQ7nW/hosplogin.png'
+                src = 'https://raw.githubusercontent.com/Cher-253/LifeSaverImages/main/hospitalsigninpic.jpeg'
                 />
             </Link>
-            </div>
-            <div className='loginselectorD'>
+
             <Link to ='/login'>
                 <img
                 className = "hospitalsigninpicture"
-                src = 'https://i.ibb.co/bQxqsRq/donorlogin.png'
+                src = 'https://github.com/Cher-253/LifeSaverImages/blob/main/donorsigninpic.png?raw=true'
                 />
             </Link>
-</div>
+
         </div>
     )
 }

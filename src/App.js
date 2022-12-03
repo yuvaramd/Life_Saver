@@ -8,7 +8,11 @@ import Login from './Login';
 import Loginselector from './LoginSelector';
 import {auth} from "./firebase";
 import {useStateValue} from "./StateProvider";
-// import Logindonor from './LoginDonor';
+import HospitalInfo from './pages/hospitalinfo/HospitalInfo';
+import UserInfo from './pages/userinfo/UserInfo';
+import HospitalHome from './pages/hospitalHome/HospitalHome';
+import UserHome from './pages/userHome/UserHome';
+
 
 function App() {
 const [{},dispatch] = useStateValue();
@@ -45,10 +49,25 @@ const [{},dispatch] = useStateValue();
           <Route path="/logintest">
             <Loginselector/>
           </Route>
-          
           <Route path = "/checkout">
             <Header />
             <Checkout/>
+          </Route>
+          <Route path = "/hospitalinfo">
+            <Header />
+            <HospitalInfo/>
+          </Route>
+          <Route path = "/userinfo">
+            <Header />
+            <UserInfo/>
+          </Route>
+          <Route path = "/hospitalhome">
+            <Header />
+            <HospitalHome/>
+          </Route>
+          <Route path = "/userhome">
+            <Header />
+            <UserHome/>
           </Route>
           <Route path = "/">
             <Header />

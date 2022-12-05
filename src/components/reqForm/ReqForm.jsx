@@ -34,7 +34,8 @@ function ReqForm() {
         amount: amount,
         date: date,
         county:county, 
-        state:state
+        state:state,
+        isAccepted: false
     }
 
     const clearInput = () => {

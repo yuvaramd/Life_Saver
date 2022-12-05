@@ -6,7 +6,7 @@ import {collection, query, orderBy, onSnapshot} from "firebase/firestore"
 import {useState, useEffect} from 'react'
 import { useStateValue } from "../../StateProvider";
 import firebase from "firebase";
-import { type } from "@testing-library/user-event/dist/type";
+
 
 function UserHome() {
     const [requests, setRequests] = useState([])

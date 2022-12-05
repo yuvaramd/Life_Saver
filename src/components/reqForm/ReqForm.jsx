@@ -16,6 +16,7 @@ function ReqForm() {
     
     const [bloodgroup, setBloodGroup] = useState("")
     const [ageLimit, setAgeLimit] = useState("")
+    const [email, setEmail] = useState("")
     const[amount,setAmount] = useState("")
     const [date, setDate] = useState("")
     const rfstory = useHistory();
@@ -27,6 +28,7 @@ function ReqForm() {
     const dataToSend = {
         bloodgroup: bloodgroup,
         name:name,
+        email:email,
         phoneNumber: pnumber,
         ageLimit: ageLimit, 
         amount: amount,
@@ -44,7 +46,9 @@ function ReqForm() {
         setName("")
         setPnumber("")
         setState("")
+        setEmail("")
     }
+
     const getBloodGroup = (e) => {
         e.preventDefault()
         setBloodGroup(e.target.value)
@@ -91,6 +95,13 @@ function ReqForm() {
             <input type="text" required  value={name} id="rfName" onChange={(e)=> {
                     e.preventDefault() 
                     setName(e.target.value)
+                 }}/>
+            <label>
+                Email
+            </label>
+            <input type="email" required  value={email} id="rfName" onChange={(e)=> {
+                    e.preventDefault() 
+                    setEmail(e.target.value)
                  }}/>
             <label>
                 Phone Number

@@ -11,7 +11,7 @@ function UserHome() {
     const [requests, setRequests] = useState([])
     const [detailedUser, setDetailedUser] = useState({});
     const user = firebase.auth().currentUser;
-    const [noRequestFlag, setNoReqFlag] = useState(1)
+  
     
 
     // const fetchData = async() => {
@@ -59,11 +59,9 @@ function UserHome() {
             <div className="uh-header">
                 Welcome Home Donor! 
             </div>
-            {
-              requests.length
-            }
-          
+        
             <div className="uh-requestList">
+            
             {
                requests.map((r) => {
                 if(detailedUser.bloodgroup === r.bloodgroup && detailedUser.county === r.county && detailedUser.state == r.state){

@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import './LoginSelector.css'
 
 function Loginselector(){
+    const [userType, setUserType] = useState("hello");
     return (
         <div className='maindivlogin' >
         <div className='loginselectorH'>

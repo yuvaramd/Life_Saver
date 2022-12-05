@@ -1,7 +1,28 @@
-.loginselector{
-    background-color: white;
+.loginselectorHospital{
+    /* background-color: white; */
+    /* justify-items: left; */
     height: 100vh;
-    display:flex;
+    /* display:flex; */
+    flex-direction: column;
+    align-items: center;
+}
+ 
+.loginselectorD{
+    /* background-color: white; */
+    /* justify-items: left; */
+    justify-content: right;
+    height: 100vh;
+    /* display:flex; */
+    flex-direction: column;
+    align-items: center;
+}
+ 
+.loginselectorDonor{
+    /* background-color: white; */
+    justify-content: right;
+    /* justify-items: left; */
+    height: 100vh;
+    /* display:flex; */
     flex-direction: column;
     align-items: center;
 }
@@ -10,7 +31,23 @@
     margin-top: 20px;
     margin-bottom: 20px;
     object-fit: contain;
-    width: 100px;
+    width: 40%;
     margin-left: auto;
     margin-right: auto;
+    /* background-color: white; */
+
+}
+
+.hospitallogin{
+    /* background-color: white; */
+    justify-items: left;
+    height: 100vh;
+    /* display:flex; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.loginselector
+{
+    
 }

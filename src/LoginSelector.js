@@ -5,21 +5,23 @@ import './LoginSelector.css'
 function Loginselector(){
     const [userType, setUserType] = useState("hello");
     return (
-        <div className='loginselector'>
+        <div className='maindivlogin' >
+        <div className='loginselectorH'>
             <Link to ='/login'>
                 <img
                 className = "hospitalsigninpicture"
-                src = 'https://raw.githubusercontent.com/Cher-253/LifeSaverImages/main/hospitalsigninpic.jpeg'
+                src = 'https://i.ibb.co/gwKQ7nW/hosplogin.png'
                 />
             </Link>
-
+            </div>
+            <div className='loginselectorD'>
             <Link to ='/login'>
                 <img
                 className = "hospitalsigninpicture"
-                src = 'https://github.com/Cher-253/LifeSaverImages/blob/main/donorsigninpic.png?raw=true'
+                src = 'https://i.ibb.co/bQxqsRq/donorlogin.png'
                 />
             </Link>
-
+</div>
         </div>
     )
 }

@@ -6,11 +6,15 @@ import {collection, query, orderBy, onSnapshot} from "firebase/firestore"
 import {useState, useEffect} from 'react'
 import { useStateValue } from "../../StateProvider";
 import firebase from "firebase";
+import { type } from "@testing-library/user-event/dist/type";
 
 function UserHome() {
     const [requests, setRequests] = useState([])
     const [detailedUser, setDetailedUser] = useState({});
     const user = firebase.auth().currentUser;
+    const current = new Date();
+    const currentLocale = current.toLocaleDateString();
+    const currentDate = Date.parse(currentLocale)
   
     
 
@@ -64,7 +68,7 @@ function UserHome() {
             
             {
                requests.map((r) => {
-                if(detailedUser.bloodgroup === r.bloodgroup && detailedUser.county === r.county && detailedUser.state == r.state){
+                if(detailedUser.bloodgroup === r.bloodgroup && detailedUser.county === r.county && detailedUser.state == r.state && r.isAccepted == false && currentDate < Date.parse(r.date)){
                     return <DonationRequest data={r}/>
                 }
                 
@@ -72,7 +76,7 @@ function UserHome() {
                })
             }
 
-
+            
             
 
             </div>
